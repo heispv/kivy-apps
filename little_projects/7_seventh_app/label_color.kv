@@ -1,0 +1,51 @@
+#:kivy 1.9.0
+
+<Button>
+    font_size: 32
+    size_hint: 0.2, 0.2
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+    background_normal: ''
+    background_color: (0, 0.4, 0.45, 1)
+
+<MyRoot>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        padding: 10
+        spacing: 10
+
+
+        Label:
+            text: "Enter your name"
+            size_hint: 1, 0.5
+            font_size: 54
+            background_color: (20/255, 186/255, 106/255, 1)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        TextInput:
+            hint_text: "Enter your name"
+            multiline: False
+        
+        Label:
+            text: "How many pictures do you want to analyze?"
+            size_hint: 1, 0.5
+            font_size: 32
+
+        TextInput:
+            hint_text: "Enter a number"
+            multiline: False
+            size_hint: 0.5, 0.5
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        
+        Button:
+            text: "Submit"
+        
+        Button:
+            text: "Clear"
+            
