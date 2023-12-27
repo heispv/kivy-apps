@@ -1,0 +1,17 @@
+#:kivy 1.9.0
+
+<MyRoot>:
+    BoxLayout:
+        size: root.width, root.height
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+
+        Label:
+            text: 'Hello World'
+        Button:
+            text: 'Click Me'
+        Button:
+            text: 'Click Me'
+            size_hint: 0.5, 0.5
+            pos_hint: {'center_x': 0.5,'center_y': 0.5}
