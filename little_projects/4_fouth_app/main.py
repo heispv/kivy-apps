@@ -4,6 +4,7 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
+# Load kv file
 Builder.load_file('myapplication.kv')
 
 kivy.require('1.9.0')
