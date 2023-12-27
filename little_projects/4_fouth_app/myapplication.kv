@@ -1,4 +1,5 @@
 #:kivy 1.9.0
+#:import utils kivy.utils
 
 <MyRoot>:
 
@@ -50,7 +51,7 @@
                 text: "Submit"
                 font_size: 50
                 on_press: root.press()
-                background_color: 0.55, 0.1, 0.15, 1
+                background_color: utils.get_color_from_hex("#cf6b99")
             Label:
                 text: ""
         
