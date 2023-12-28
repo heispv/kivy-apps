@@ -21,13 +21,20 @@
             size_hint: 1, 0.5
             font_size: 54
             background_color: (20/255, 186/255, 106/255, 1)
+            ############################################################
             canvas.before:
                 Color:
                     rgba: self.background_color
                 Rectangle:
                     pos: self.pos
                     size: self.size
-
+            # Our text color
+            color: (152/255, 3/255, 252/255, 0.5)
+            bold: True
+            italic: True
+            outline_color: (0, 0, 0)
+            outline_width: 8
+            ############################################################
         TextInput:
             hint_text: "Enter your name"
             multiline: False
